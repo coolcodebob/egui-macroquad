@@ -18,16 +18,16 @@ include = [
 ]
 
 [dependencies]
-egui = "0.21.0"
-egui-miniquad = "0.14.0"
-macroquad = { version="0.3.25", default-features=false }
+egui = "0.22.0"
+egui-miniquad = { git = "https://github.com/coolcodebob/egui-miniquad", branch = "miniquad_0.4"}
+macroquad = { version="0.4.4", default-features=false }
 
 [features]
 default = ["audio"]
 audio = ["macroquad/audio"]
 
 [dev-dependencies]
-egui_demo_lib = "0.21.0"
+egui_demo_lib = "0.22.0"
 
 [profile.release]
 opt-level = 2
